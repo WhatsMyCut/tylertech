@@ -32,8 +32,13 @@
 
 <svelte:head>
 	<title>Tyler Tech Booth</title>
-  <style lang=”scss” global>
-    @import "./style/global.scss";
+  <style lang='scss'>
+    @import "../style/global.scss";
+    @import "../style/variables.scss";
+    h1 {
+      padding: 5px;
+      border: $color-blue;
+    }
   </style>
 </svelte:head>
 

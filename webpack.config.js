@@ -26,9 +26,12 @@ module.exports = {
 							dev,
 							hydratable: true,
               hotReload: false, // pending https://github.com/sveltejs/svelte/issues/2377
-              preprocess: [{
+              preprocess: ({
+                scss: {
+                  data: `@import 'src/style/variables.scss';`
+                },
                 style: sass()
-              }]
+              })
 						}
 					}
 				},

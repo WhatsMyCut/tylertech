@@ -1,12 +1,12 @@
 // global.scss
 @import "./theme.scss";
+@import "./variables.scss";
 * {
  box-sizing: border-box;
 }
 html, body {
  margin: 0;
  padding: 0;
- background-color: red !important;
 }
 main {
   position: relative;
