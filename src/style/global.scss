@@ -1,0 +1,18 @@
+// global.scss
+@import "./theme.scss";
+* {
+ box-sizing: border-box;
+}
+html, body {
+ margin: 0;
+ padding: 0;
+ background-color: red !important;
+}
+main {
+  position: relative;
+  max-width: $site-width;
+  padding: 2em;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
