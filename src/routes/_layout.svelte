@@ -3,11 +3,9 @@
 	export let segment;
 </script>
 
-<svelte:head>
 <style lang=”scss” global>
   @import "./style/global.scss";
 </style>
-</svelte:head>
 
 <Nav {segment}/>
 
