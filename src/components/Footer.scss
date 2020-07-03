@@ -8,29 +8,30 @@
   right: 0;
   bottom: 0;
   background-color: $color-blue;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 29px 15px 26px 80px;
+  padding: 29px 80px 26px;
   height: 70px;
 }
 
 .footer > div {
-  display: flex;
   flex: 1 1 auto;
-}
+  color: white;
+  font-size: 15px;
+  font-stretch: extra-condensed;
+  font-weight: normal;
+ }
 
 em {
-  font-size: 10px;
+  font-size: 9px;
   font-style: italic;
-  padding-right: 10px;
+  font-weight: 100;
+  padding: 2px 25px 0 0;
   vertical-align: baseline;
-  padding-top: 3px;
 }
 
 .right {
   text-align: right;
   justify-content: flex-end;
+  padding-right: 80px;
 }
 
 a {
