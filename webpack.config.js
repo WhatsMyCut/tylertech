@@ -32,10 +32,7 @@ module.exports = {
                 scss: {
                   data: `@import '${join(process.cwd(), 'src/scss/global.scss')}';`,
                 },
-                style: sass(
-                  {}, // Empty sass options
-                  { all: true } // Preprocess all styles
-                )
+                style: sass()
               })
             }
           }
