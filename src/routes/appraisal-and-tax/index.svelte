@@ -1,5 +1,5 @@
 <style type="text/sass">
-  @import '../style/global.scss';
+  @import '../../style/global.scss';
   figure {
     text-align: center;
     margin: 0 auto;
