@@ -19,7 +19,31 @@
 @include font('Amplitude Bold', '/fonts/Amplitude-Bold');
 @include font('Trade Gothic', '/fonts/TradeGothicLTStd');
 
-* {
+:global(*) {
  box-sizing: border-box;
  background-color: transparent;
+
+ font-family: "Trade Gothic";
+ font-weight: medium;
+}
+
+:global(html, body) {
+  margin: 0;
+  padding: 0;
+}
+
+:global(.headline) {
+  font-family: "Amplitude Bold";
+  font-size: 30px;
+  font-weight: normal;
+  color: $color-blue;
+  text-align: left;
+  padding: 0 15px;
+}
+
+:global(.line) {
+  box-sizing: border-box;
+  height: 1px;
+  width: 1920px;
+  border: 2px solid #326295;
 }
