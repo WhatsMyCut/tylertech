@@ -1,17 +1,36 @@
-@import '../style/global.scss';
+@import '../style/variables.scss';
 
 .footer {
-  position: absolute;
-  bottom: calc(100% - 70) + 'px';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   left: 0;
   right: 0;
+  bottom: 0;
   background-color: $color-blue;
   color: white;
   font-size: 15px;
   font-weight: bold;
   padding: 29px 15px 26px 80px;
   height: 70px;
-  vertical-align: middle;
+}
+
+.footer > div {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+em {
+  font-size: 10px;
+  font-style: italic;
+  padding-right: 10px;
+  vertical-align: baseline;
+  padding-top: 3px;
+}
+
+.right {
+  text-align: right;
+  justify-content: flex-end;
 }
 
 a {

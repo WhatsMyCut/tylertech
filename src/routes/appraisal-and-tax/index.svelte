@@ -2,15 +2,20 @@
   @import '../../style/global.scss';
   figure {
     text-align: center;
-    margin: 0 auto;
-    margin: 0 0 1em 0;
+    margin: 5em 0 1em 0;
+    position: relative;
   }
 
   img {
-    width: 3840px;
+    width: 1142px;
     height: auto;
-    max-width: 99%;
     margin: 0 0 1em 0;
+  }
+  .booth-headline {
+    position: relative;
+    left: 105px;
+    font-size: 22px;
+    margin: 0 0 10px;
   }
 </style>
 
@@ -18,8 +23,8 @@
   <title>Tyler Tech Booth</title>
 </svelte:head>
 
-<h1 class="headline">Appraisal and Tax</h1>
 
 <figure>
+  <h1 class="headline booth-headline">Appraisal and Tax</h1>
   <img alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
 </figure>
