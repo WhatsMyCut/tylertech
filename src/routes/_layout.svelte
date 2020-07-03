@@ -3,12 +3,22 @@
 	export let segment;
 </script>
 
-<style lang=”scss” global>
-  @import "./style/global.scss";
+<style global type="text/sass">
+  @import "../style/global.scss";
+
+  .main {
+    font-family: 'Trade Gothic';
+    position: relative;
+    max-width: 100%;
+    padding: 2em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
 </style>
 
 <Nav {segment}/>
 
-<main>
+<main class="main">
 	<slot></slot>
 </main>

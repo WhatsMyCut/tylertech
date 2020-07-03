@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<title>{status}</title>
-  <style lang='scss'>
+  <style type="text/sass">
     h1, p {
       margin: 0 auto;
     }

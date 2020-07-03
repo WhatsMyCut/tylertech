@@ -1,50 +1,35 @@
-<style lang="scss">
-  @import "../style/theme.scss";
+<style type="text/sass">
+  @import '../style/global.scss';
+  h1 {
+    font-family: "Amplitude Bold";
+    font-size: 22px;
+    color: green;
+  }
+  figure {
+    text-align: center;
+    margin: 0 auto;
+    margin: 0 0 1em 0;
+  }
 
-	h1, figure {
-		text-align: center;
-		margin: 0 auto;
-	}
+  img {
+    width: 100%;
+    max-width: 99%;
+    margin: 0 0 1em 0;
+  }
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 600px;
-		margin: 0 0 1em 0;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
+  @media (min-width: 480px) {
+    h1 {
+      color: red;
+    }
+  }
+ </style>
 
 <svelte:head>
-	<title>Tyler Tech Booth</title>
-  <style lang='scss'>
-    @import "../style/global.scss";
-    @import "../style/variables.scss";
-    h1 {
-      padding: 5px;
-      border: $color-blue;
-    }
-  </style>
+  <title>Tyler Tech Booth</title>
 </svelte:head>
 
 <h1>Tyler Tech Booth</h1>
 
 <figure>
-	<figcaption>Have fun with Sapper!</figcaption>
-	<img alt='Tyler Tech Booth' src='Booth_Template_Guide.png'>
+  <img alt='Tyler Tech Booth' src='Booth_Template_Guide.png'>
 </figure>

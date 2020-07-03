@@ -2,13 +2,15 @@
 	<title>About</title>
 </svelte:head>
 
-<style lang='scss'>
-  @import '../style/variables.scss';
+<style type="text/sass">
+  @import '../style/global.scss';
   h1 {
-    color: $color-blue;
+    font-family: "Amplitude Bold";
+    color: #21578A;
   }
 </style>
 
-<h1>About this site</h1>
+<h1>Video</h1>
 
-<p>This is the 'about' page. There's not much here.</p>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/vflet52iog?videoFoam=true" title="Land &amp; Official Records Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
