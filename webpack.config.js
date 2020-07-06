@@ -4,7 +4,6 @@ const { join } = require('path');
 const config = require('sapper/config/webpack.js');
 const pkg = require('./package.json');
 const { sass } = require("svelte-preprocess-sass");
-const globalCSS = require('svelte-preprocess-css-global');
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -14,6 +13,7 @@ const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
 module.exports = {
+  watch: true,
   client: {
     entry: config.client.entry(),
     output: config.client.output(),
