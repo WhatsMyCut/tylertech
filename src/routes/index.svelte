@@ -1,30 +1,34 @@
-<script>
- let clients = "./_sections";
- let cName = clients.filter((v) => v.clientName === 'Client 1').clientName;
+<script context="module">
+	export function preload({ params, query }) {
+		return this.fetch(`sections.json`).then(r => r.json()).then(sections => {
+			return { sections };
+		});
+	}
 </script>
-<style type="text/sass">
-  @import '../style/global.scss';
-  figure {
-    text-align: center;
-    margin: 0 auto;
-    margin: 0 0 1em 0;
-  }
 
-  img {
-    width: 3840px;
-    height: auto;
-    max-width: 99%;
-    margin: 0 0 1em 0;
-  }
+<script>
+	export let sections;
+</script>
+
+<style>
+	ul {
+		margin: 0 0 1em 0;
+		line-height: 1.5;
+	}
 </style>
 
 <svelte:head>
-  <title>Tyler Tech Booth</title>
+	<title>Tyler Technologies Booth: Home</title>
 </svelte:head>
 
-<h1 class="headline">{cName} / Appraisal and Tax</h1>
+<h1>Sections</h1>
 
-<figure>
-<p>{clients}</p>
-  <img alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
-</figure>
+<ul>
+	{#each sections as section}
+		<!-- we're using the non-standard `rel=prefetch` attribute to
+				tell Sapper to load the data for the page as soon as
+				the user hovers over the link or taps it, instead of
+				waiting for the 'click' event -->
+		<li><a rel='prefetch' href='/{section.slug}'>{section.title}</a></li>
+	{/each}
+</ul>
