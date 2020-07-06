@@ -1,3 +1,7 @@
+<script>
+ let clients = "./_sections";
+ let cName = clients.filter((v) => v.clientName === 'Client 1').clientName;
+</script>
 <style type="text/sass">
   @import '../style/global.scss';
   figure {
@@ -18,8 +22,9 @@
   <title>Tyler Tech Booth</title>
 </svelte:head>
 
-<h1 class="headline">Appraisal and Tax</h1>
+<h1 class="headline">{cName} / Appraisal and Tax</h1>
 
 <figure>
+<p>{clients}</p>
   <img alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
 </figure>
