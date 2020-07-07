@@ -1,0 +1,27 @@
+
+<style type="text/sass">
+  @import '../style/global.scss';
+  figure {
+    text-align: center;
+    margin: 0 auto;
+    margin: 0 0 1em 0;
+  }
+
+  img {
+    width: 3840px;
+    height: auto;
+    max-width: 99%;
+    margin: 0 0 1em 0;
+  }
+</style>
+
+<svelte:head>
+  <title>Tyler Tech Booth</title>
+</svelte:head>
+
+<h1 class="headline">{cName} / Appraisal and Tax</h1>
+
+<figure>
+<p>{clients}</p>
+  <img alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
+</figure>

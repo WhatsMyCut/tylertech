@@ -22,22 +22,20 @@
   figure {
     text-align: center;
     margin: 5em 0 1em 0;
-    position: relative;
+  }
+  .container {
+    margin: 0 auto;
   }
 
   img {
-    width: 1142px;
-    height: auto;
-    margin: 0 0 1em 0;
+    height: 650px;
+    width: 1155px;
   }
   .booth-headline {
     position: relative;
     left: 105px;
     font-size: 22px;
     margin: 0 0 10px;
-  }
-  .bordered {
-    border: 1px solid pink;
   }
 </style>
 
@@ -49,16 +47,24 @@
 
 <figure>
   <h1 class="headline booth-headline">{section.title}</h1>
-  <img usemap="#infographic" alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
-  <map name="infographic">
-    <area shape="poly" coords="130,147,200,107,254,219,130,228" class='bordered'
-          href={section.hotspots[0].URL}
-          target="_blank" alt="Vertical Display" />
-    <area shape="poly" coords="130,147,130,228,6,219,59,107" class='bordered'
-          href="https://developer.mozilla.org/docs/Web/CSS"
-          target="_blank" alt="CSS" />
-    <area shape="poly" coords="130,147,200,107,130,4,59,107" class='bordered'
-          href="https://developer.mozilla.org/docs/Web/JavaScript"
-          target="_blank" alt="JavaScript" />
-  </map>
+  <div class="container">
+    <map name="infographic">
+      <area shape="poly" coords="185,38, 350,48, 360,357, 210,390"
+            href={section.hotspots[0].URL}
+            target="_blank" alt="Vertical Display" />
+      <area shape="poly" coords="336,370, 415,370, 415,455, 336,455" style='border: 1px solid red;'
+            href={section.hotspots[1].URL}
+            target="_blank" alt="Pedestal 1" />
+      <area shape="poly" coords="535,385, 620,385, 620,470, 535,470" style='border: 1px solid green;'
+            href={section.hotspots[2].URL}
+            target="_blank" alt="Pedestal 2" />
+      <area shape="poly" coords="740,375, 820,375, 820,455, 740,455" style='border: 1px solid blue;'
+            href={section.hotspots[3].URL}
+            target="_blank" alt="Pedestal 3" />
+      <area shape="poly" coords="750,110, 1005,115, 990,305, 745,265" style='border: 1px solid yellow;'
+            href={section.hotspots[4].URL}
+            target="_blank" alt="Horizontal Display" />
+    </map>
+    <img usemap="#infographic" alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
+  </div>
 </figure>
