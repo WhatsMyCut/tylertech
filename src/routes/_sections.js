@@ -15,22 +15,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "Appraisal and Tax vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "Appraisal and Tax pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "Appraisal and Tax pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "Appraisal and Tax pedestal 3"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "Appraisal and Tax horiz display"
       }
     ]
   },
@@ -41,22 +46,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "Civic Services vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "Civic Services pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "Civic Services pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "Civic Services pedestal 3"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "Civic Services horiz display"
       }
     ]
   },
@@ -67,22 +77,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "Courts vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "Courts pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "Courts pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "Courts pedestal 4"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "Courts horiz display"
       }
     ]
   },
@@ -93,22 +108,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "ERP vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "ERP pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "ERP pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "ERP pedestal 3"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "ERP horiz display"
       }
     ]
   },
@@ -119,22 +139,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "Courts Municipal vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "Courts Municipal pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "Courts Municipal pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "Courts Municipal pedestal 3"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "Courts Municipal horiz display"
       }
     ]
   },
@@ -145,22 +170,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "Public Safety vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "Public Safety pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "Public Safety pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "Public Safety pedestal 3"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "Public Safety horiz display"
       }
     ]
   },
@@ -171,22 +201,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "Schools vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "Schools pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "Schools pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "Schools pedestal 3"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "Schools horiz display"
       }
     ]
   },
@@ -197,22 +232,27 @@ const sections = [
       {
         type: "vert-display",
         URL: "http://www.hotspot1.url/",
+        text: "Total Tyler vert display"
       },
       {
         type: "pedestal1",
         URL: "http://www.hotspot2.url/",
+        text: "Total Tyler pedestal 1"
       },
       {
         type: "pedestal2",
         URL: "http://www.hotspot3.url/",
+        text: "Total Tyler pedestal 2"
       },
       {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
+        text: "Total Tyler pedestal 3"
       },
       {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
+        text: "Total Tyler horiz display"
       }
     ]
   }
