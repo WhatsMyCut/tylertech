@@ -8,11 +8,15 @@
 
 <style type="text/scss">
   .content {
-    margin: 0 auto;
+    margin: 25px auto 0;
+    padding: 10px;
   }
   .message {
-		font-size: 1rem;
-		text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    color: #21578A;
   }
   button {
     background-color: #21578A;
