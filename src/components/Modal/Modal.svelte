@@ -97,11 +97,8 @@
   setContext(key, { open, close });
 </script>
 
-<style>
-  * {
-    box-sizing: border-box;
-  }
-
+<style type="scss">
+  @import '../../style/variables.scss';
   .bg {
     position: fixed;
     z-index: 1000;
@@ -126,8 +123,8 @@
     max-height: 100%;
     margin: 2rem auto;
     color: black;
-    border-radius: 0.5rem;
     background: white;
+    border: 2px solid #21578A;
   }
 
   .content {
@@ -207,6 +204,12 @@
   .close:hover, .close:focus, .close:active {
     outline: none;
   }
+  .logo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+
 </style>
 
 <svelte:window on:keyup={handleKeyup}/>
@@ -229,6 +232,7 @@
         on:outroend={onClosed}
         style={cssWindow}
       >
+        <div class="logo"><img src="/LOGO-Tyler-Technologies-Color-120.png" height="25" alt="Tyler Technologies"/></div>
         {#if state.closeButton}
           <button on:click={close} class="close"></button>
         {/if}

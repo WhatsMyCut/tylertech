@@ -10,7 +10,7 @@
 
   const { open } = getContext('simple-modal');
 	const showModal = () => {
-		open(ModalContent, { message: "It's a popup with long text!" });
+		open(ModalContent, { message: section.hotspots[1].text, buttonText: "Download", buttonIcon: "download" });
 	};
 
   function handleVideoEnd(message) {

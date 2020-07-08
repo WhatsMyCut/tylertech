@@ -12,7 +12,6 @@
   }
 }
 
-@import "./theme.scss";
 @import "./variables.scss";
 
 // use the 'static/' folder root
@@ -47,4 +46,11 @@
   height: 1px;
   width: 1920px;
   border: 2px solid #326295;
+}
+
+:global(button) {
+  background-color: $color-blue;
+  font-family: "Amplitude Bold";
+  font-weight: 700;
+  color: white;
 }
