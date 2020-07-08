@@ -16,9 +16,17 @@
 <script>
   import VideoPlayer from '../components/VideoPlayer.svelte';
   export let section;
-  const handleVideoEnd = (message) => {
-    console.log('callback', message);
+  let ended = false;
+  let displayVideo;
+  let displayImage;
+
+  function handleVideoEnd(message) {
+    console.log('callback', {message});
+    ended = true;
   }
+
+  $: displayVideo = !ended ? 'none' : 'block';
+  $: displayImage = !ended ? 'block' : 'none';
 </script>
 
 <style type="text/sass">
@@ -32,6 +40,10 @@
     margin: 0 auto 100px;
     position: relative;
   }
+
+  div.static-content, div.video-content {
+    transition: all 10s ease-in-out 1s;
+  }
   img {
     height: auto;
     width: 100%;
@@ -39,6 +51,12 @@
   .booth-headline {
     font-size: 22px;
     margin: 0 0 10px;
+  }
+  .block {
+    display: block;
+  }
+  .none {
+    display: none;
   }
 </style>
 
@@ -50,7 +68,7 @@
 
 <figure>
   <h1 class="headline booth-headline">{section.title}</h1>
-  <div class="container static-content" style="display:none">
+  <div class="container static-content {displayVideo}">
     <map name="infographic">
       <area shape="poly" coords="185,38, 350,48, 360,357, 210,390"
             href={section.hotspots[0].URL}
@@ -70,7 +88,7 @@
     </map>
     <img usemap="#infographic" alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
   </div>
-  <div class="container video-content">
+  <div class="container static-content {displayImage}">
     <VideoPlayer { section } { handleVideoEnd } />
   </div>
 
