@@ -152,6 +152,7 @@
     bind:currentTime={time}
     bind:duration
     bind:paused
+    bind:ended
   ></video>
 
   <div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
