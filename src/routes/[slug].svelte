@@ -22,7 +22,6 @@
 </script>
 
 <style type="text/sass">
-  @import '../style/global.scss';
 </style>
 
 

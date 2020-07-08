@@ -98,7 +98,6 @@
 </script>
 
 <style type="scss">
-  @import '../../style/variables.scss';
   .bg {
     position: fixed;
     z-index: 1000;

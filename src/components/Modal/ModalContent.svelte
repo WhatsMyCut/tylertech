@@ -1,13 +1,16 @@
 <script>
   export let message;
+  export let content;
   export let buttonText;
   export let buttonIcon;
 
 </script>
 
 <style type="text/scss">
-  @import '../../style/variables.scss';
-  h2 {
+  .content {
+    margin: 0 auto;
+  }
+  .message {
 		font-size: 1rem;
 		text-align: center;
   }
@@ -21,7 +24,12 @@
   }
 </style>
 
-<h2>{message}</h2>
+<div class="content">{@html content}</div>
+<div class="message">{message}</div>
 {#if buttonText}
-  <button ><img src="/{buttonIcon}.png" alt={buttonText} />{buttonText}</button>
+  <button >
+    {#if buttonIcon}
+    <img src="/{buttonIcon}.png" alt={buttonText} />
+    {/if}
+    {buttonText}</button>
 {/if}
