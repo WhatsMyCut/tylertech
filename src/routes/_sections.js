@@ -17,17 +17,17 @@ const sections = [
     hotspots: [
       {
         type: "vert-display",
-        URL: "http://www.hotspot1.url/",
+        URL: "https://empower.tylertech.com/Appraisal-and-Tax-Virtual-Trade-Show.html",
         text: "Appraisal and Tax vert display"
       },
       {
         type: "pedestal1",
-        URL: "http://www.hotspot2.url/",
+        URL: "https://www.tylertech.com/at-1",
         text: "Appraisal and Tax pedestal 1"
       },
       {
         type: "pedestal2",
-        URL: "http://www.hotspot3.url/",
+        URL: "https://www.tylertech.com/at-2",
         text: "Appraisal and Tax pedestal 2"
       },
       {

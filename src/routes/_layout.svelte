@@ -1,7 +1,6 @@
 <script>
 	import Nav from '../components/Nav.svelte';
 	import Footer from '../components/Footer.svelte';
-	export let segment;
 </script>
 
 <style global type="text/sass">
@@ -18,10 +17,10 @@
   }
 </style>
 
-<Nav {segment}/>
+<Nav/>
 
 <main class="main">
 	<slot></slot>
 </main>
 
-<Footer {segment} />
+<Footer/>
