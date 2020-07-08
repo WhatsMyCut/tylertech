@@ -11,6 +11,9 @@ const sections = [
   {
     title: "Appraisal and Tax",
     slug: "appraisal-and-tax",
+    background: "/backgrounds/tylertech_booth_01_a_t.jpg",
+    mp4: "/videos/tylertech_booth_01_a_t.mp4",
+    webm: "/videos/tylertech_booth_01_a_t.mp4",
     hotspots: [
       {
         type: "vert-display",

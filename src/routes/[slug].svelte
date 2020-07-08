@@ -14,97 +14,29 @@
 </script>
 
 <script>
+  import VideoPlayer from '../components/VideoPlayer.svelte';
   export let section;
+  const handleVideoEnd = (message) => {
+    console.log('callback', message);
+  }
 </script>
 
 <style type="text/sass">
   @import '../style/global.scss';
   figure {
     text-align: center;
-    margin: 2em 0 1em 0;
-  }
-  .container {
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .container > div {
-    position: absolute;
-    color: white;
-    font-family: "Trade Gothic", sans-serif;
-    font-size: 12px;
-    text-align: center;
-    width: auto;
-    white-space: nowrap;
-  }
-
-  .p1text {
-    bottom: 151px;
-    margin-left: 32.5%;
-    margin-right: 57.5%;
-  }
-
-  .p1text.appraisal-and-tax,
-  .p1text.courts-municipal  {
-    margin-left: 30.25%;
-    margin-right: 59.75%;
-  }
-  .p1text.civic-services,
-  .p1text.public-safety,
-  .p1text.total-tyler {
-    margin-left: 31%;
-    margin-right: 59%;
-  }
-
-  .p2text {
-    bottom: 135px;
-    margin-left: 47%;
-    margin-right: 53%;
-  }
-  .p2text.appraisal-and-tax {
-    margin-left: 44.75%;
-    margin-right: 65.25%;
-  }
-  .p2text.civic-services,
-  .p2text.public-safety,
-  .p2text.total-tyler {
-    margin-left: 45.5%;
-    margin-right: 54.5%;
-  }
-  .p2text.courts-municipal {
-    margin-left: 45%;
-    margin-right: 55%;
-  }
-
-  .p3text {
-    bottom: 149px;
-    margin-left: 61.5%;
-    margin-right: 28.5%;
-  }
-
-  .p3text.appraisal-and-tax,
-  .p3text.courts-municipal {
-    margin-left: 59%;
-    margin-right: 41%;
-  }
-  .p3text.civic-services {
-    margin-left: 59.5%;
-    margin-right: 30.5%;
-  }
-  .p3text.public-safety,
-  .p3text.total-tyler {
-    margin-left: 60%;
-    margin-right: 30%;
-  }
-
-
-  img {
-    height: 650px;
+    margin: 2em auto 1em;
     width: 1155px;
   }
-  .booth-headline {
+  .container {
+    margin: 0 auto 100px;
     position: relative;
-    left: 105px;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  .booth-headline {
     font-size: 22px;
     margin: 0 0 10px;
   }
@@ -118,7 +50,7 @@
 
 <figure>
   <h1 class="headline booth-headline">{section.title}</h1>
-  <div class="container">
+  <div class="container static-content" style="display:none">
     <map name="infographic">
       <area shape="poly" coords="185,38, 350,48, 360,357, 210,390"
             href={section.hotspots[0].URL}
@@ -137,8 +69,9 @@
             target="_blank" alt="Horizontal Display" />
     </map>
     <img usemap="#infographic" alt='Tyler Tech Booth' src='Booth_Template_FPO.png'>
-    <div class="p1text {section.slug}">{section.hotspots[1].text}</div>
-    <div class="p2text {section.slug}">{section.hotspots[2].text}</div>
-    <div class="p3text {section.slug}">{section.hotspots[3].text}</div>
   </div>
+  <div class="container video-content">
+    <VideoPlayer { section } { handleVideoEnd } />
+  </div>
+
 </figure>
