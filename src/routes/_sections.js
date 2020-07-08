@@ -27,7 +27,7 @@ const sections = [
         type: "pedestal1",
         URL: "https://www.tylertech.com/at-1",
         text: "Appraisal and Tax pedestal 1",
-        content: "/icons/pdf.png",
+        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
         buttonText: "Download",
         buttonIcon: "download"
       },
