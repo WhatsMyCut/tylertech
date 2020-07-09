@@ -1,11 +1,10 @@
-
 @import '../style/global.scss';
-
 .nav {
   font-family: 'Trade Gothic';
   padding: 27px 15px 30px 38px;
   border-bottom: 1.5px solid $color-blue;
   width: 100%;
+  background-color: white;
 }
 
 .logo {
@@ -20,7 +19,9 @@ ul {
   padding: 0;
 }
 
+
 /* clearfix */
+
 ul::after {
   content: '';
   display: block;
@@ -36,7 +37,6 @@ li {
 //   position: relative;
 //   display: inline-block;
 // }
-
 // [aria-current]::after {
 //   position: absolute;
 //   content: '';
@@ -46,7 +46,6 @@ li {
 //   display: block;
 //   bottom: -1px;
 // }
-
 a {
   text-decoration: none;
   padding: 0;
