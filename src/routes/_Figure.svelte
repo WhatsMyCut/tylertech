@@ -20,7 +20,11 @@
     buttonIcon = hotspot.buttonIcon || '';
     console.log('showModal', {message, content, buttonText, buttonIcon})
 		open(ModalContent, { message, buttonText, buttonIcon, content });
-	};
+  };
+
+  const openLink = (url) => {
+    return window.open(url, 'tylertech');
+  }
 
   function handleVideoEnd(message) {
     ended = true;
@@ -33,8 +37,9 @@
 <style type="text/sass">
   figure {
     text-align: center;
-    margin: 2em auto 1em;
-    width: 1155px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #131218;
   }
   .container {
     margin: 0 auto 100px;
@@ -65,6 +70,28 @@
   .hotspot {
     cursor: pointer;
   }
+  .ptext {
+    position: absolute;
+    font-family: "Aplitude Bold";
+    font-size: 0.8em;
+    color: white;
+  }
+  .hotspot {
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid red;
+  }
+  .hotspot.vdisplay {
+    left: 15.5%;
+    top: 4.5%;
+    transform: rotateX(0deg) rotateY(36deg) rotateZ(-11deg) skew(-8deg, 0deg);
+    width: 17.5%;
+    height: 52.6%;
+  }
+  .hotspot.pedestal1 {
+    left: 20vw;
+    top: 30vh;
+  }
 </style>
 
 
@@ -74,12 +101,8 @@
 
 
 <figure>
-  <h1 class="headline booth-headline">{section.title}</h1>
   <div class="container static-content {displayVideo}">
     <map name="infographic">
-      <area shape="poly" coords="185,38, 350,48, 360,357, 210,390"
-            href={section.hotspots.vdisplay.URL}
-            target="_blank" alt="Vertical Display" />
       <area shape="poly" coords="336,370, 415,370, 415,455, 336,455" class="hotspot"
             on:click={showModal(section.hotspots.pedestal1)}
             target="_blank" alt="Pedestal 1" />
@@ -94,8 +117,12 @@
             target="_blank" alt="Horizontal Display" />
     </map>
     <img usemap="#infographic" alt='Tyler Tech Booth' src={background}>
+    <div class="hotspot vdisplay" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
+    <div class="ptext pedestal1">{section.hotspots.pedestal1.text}</div>
+    <div class="ptext pedestal2}">{section.hotspots.pedestal2.text}</div>
+    <div class="ptext pedestal3">{section.hotspots.pedestal3.text}</div>
   </div>
-  <div class="container static-content {displayImage}">
+  <div class="container video-content {displayImage}">
     <VideoPlayer { section } { handleVideoEnd } />
   </div>
 

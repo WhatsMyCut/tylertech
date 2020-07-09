@@ -9,11 +9,12 @@
   .main {
     font-family: 'Trade Gothic';
     position: relative;
-    max-width: 100%;
-    padding: 2em;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
     box-sizing: border-box;
     text-align: center;
+    background-color: #131218;
   }
 </style>
 
