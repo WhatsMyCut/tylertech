@@ -7,8 +7,7 @@
 // we don"t want to create an `/blog/posts` route — the leading
 // underscore tells Sapper not to do that.
 
-const sections = [
-  {
+const sections = [{
     title: "Appraisal and Tax",
     slug: "appraisal-and-tax",
     background: "/backgrounds/tylertech_booth_01_a_t.jpg",
@@ -26,7 +25,7 @@ const sections = [
       "pedestal1": {
         type: "pedestal1",
         URL: "https://www.tylertech.com/at-1",
-        text: "Appraisal and Tax pedestal 1",
+        text: "Appraisal & Tax Solutions",
         content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
         buttonText: "Download",
         buttonIcon: "download"
@@ -34,7 +33,7 @@ const sections = [
       "pedestal2": {
         type: "pedestal2",
         URL: "https://www.tylertech.com/at-2",
-        text: "Appraisal and Tax pedestal 2",
+        text: "Update Your Antiquated System",
         content: "/icons/video.png",
         buttonText: "Download",
         buttonIcon: "download"
@@ -42,7 +41,7 @@ const sections = [
       "pedestal3": {
         type: "pedestal3",
         URL: "http://www.hotspot4.url/",
-        text: "Appraisal and Tax pedestal 3",
+        text: "Your Property Taxes",
         content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
         buttonText: 'Close',
         buttonIcon: undefined

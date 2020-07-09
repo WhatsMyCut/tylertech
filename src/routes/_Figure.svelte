@@ -72,9 +72,24 @@
   }
   .ptext {
     position: absolute;
-    font-family: "Aplitude Bold";
-    font-size: 0.8em;
+    font-family: "Trade Gothic";
+    font-size: 1.2rem;
     color: white;
+    text-align: center;
+  }
+  .ptext.pedestal1 {
+    left: 26%;
+    bottom: 21%;
+  }
+  .ptext.pedestal2 {
+    left: 35%;
+    bottom: 18.5%;
+    width: auto;
+    right: 35%;
+  }
+  .ptext.pedestal3 {
+    left: 61.5%;
+    bottom: 21%;
   }
   .hotspot {
     position: absolute;
@@ -119,7 +134,7 @@
     <img usemap="#infographic" alt='Tyler Tech Booth' src={background}>
     <div class="hotspot vdisplay" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
     <div class="ptext pedestal1">{section.hotspots.pedestal1.text}</div>
-    <div class="ptext pedestal2}">{section.hotspots.pedestal2.text}</div>
+    <div class="ptext pedestal2">{section.hotspots.pedestal2.text}</div>
     <div class="ptext pedestal3">{section.hotspots.pedestal3.text}</div>
   </div>
   <div class="container video-content {displayImage}">
