@@ -12,47 +12,46 @@ const sections = [{
     slug: "appraisal-and-tax",
     background: "/backgrounds/tylertech_booth_01_a_t.jpg",
     mp4: "/videos/tylertech_booth_01_a_t.mp4",
-    webm: "/videos/tylertech_booth_01_a_t.mp4",
+    webm: "/videos/tylertech_booth_01_a_t.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
         URL: "https://empower.tylertech.com/Appraisal-and-Tax-Virtual-Trade-Show.html",
-        text: "Appraisal and Tax vert display",
-        content: undefined,
-        buttonText: undefined,
-        buttonIcon: undefined,
       },
       "pedestal1": {
         type: "pedestal1",
         URL: "https://www.tylertech.com/at-1",
-        text: "Appraisal & Tax Solutions",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
         type: "pedestal2",
         URL: "https://www.tylertech.com/at-2",
-        text: "Update Your Antiquated System",
-        content: "/icons/video.png",
+        text: "Read Success Story",
+        icon: "/icons/SinglePageDoc.svg",
+        content: '<img src="/icons/SinglePageDoc.svg" alt="PDF" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc",
       },
       "pedestal3": {
         type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
-        text: "Your Property Taxes",
+        text: "Watch Video",
+        icon: "/icons/Video.svg",
         content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
         buttonText: 'Close',
-        buttonIcon: undefined
+        buttonOnClick: 'close'
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
-        text: "Appraisal and Tax horiz display",
         content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/vflet52iog?videoFoam=true" title="Land &amp; Official Records Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
         buttonText: "Close",
-        buttonIcon: undefined
+        buttonIcon: undefined,
+        buttonOnClick: 'close'
       }
     }
   },
@@ -61,47 +60,49 @@ const sections = [{
     slug: "civic-services",
     background: "/backgrounds/tylertech_booth_02_civic_services.jpg",
     mp4: "/videos/tylertech_booth_02_civic_services.mp4",
-    webm: "/videos/tylertech_booth_02_civic_services.mp4",
+    webm: "/videos/tylertech_booth_02_civic_services.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
         URL: "https://empower.tylertech.com/Civic-Services-Virtual-Trade-Show.html",
         text: "Appraisal and Tax vert display",
-        content: undefined,
-        buttonText: undefined,
-        buttonIcon: undefined,
       },
       "pedestal1": {
         type: "pedestal1",
-        URL: "https://www.tylertech.com/civic-services-2",
-        text: "Appraisal & Tax Solutions",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        URL: "https://www.tylertech.com/cs-1",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/pdf.png" alt="PDF" height="80" /><p>EnerGov Product Overview</p>',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
         type: "pedestal2",
-        URL: "https://www.tylertech.com/at-2",
-        text: "Update Your Antiquated System",
-        content: "/icons/video.png",
+        URL: "https://www.tylertech.com/cs-2",
+        text: "Read Success Story",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/pdf.png" alt="PDF" height="80" /><p>EnerGov Client Success Booklet</p>',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: 'downloadDoc'
       },
       "pedestal3": {
         type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
-        text: "Your Property Taxes",
+        URL: "https://www.tylertech.com/cs-3",
+        text: "Read Success Story",
+        icon: "/icons/SinglePageDoc.svg",
         content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: 'Close',
-        buttonIcon: undefined
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: 'downloadDoc'
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
-        text: "Appraisal and Tax horiz display",
         content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/vflet52iog?videoFoam=true" title="Land &amp; Official Records Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
         buttonText: "Close",
-        buttonIcon: undefined
+        buttonIcon: undefined,
+        buttonOnClick: 'close'
       }
     }
   },
@@ -392,7 +393,7 @@ const sections = [{
       "hdisplay": {
         type: "horiz-display",
         URL: "http://www.hotspot5.url/",
-        text: "Total Tyler horiz display",
+        text: "Schools horiz display",
         content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/vflet52iog?videoFoam=true" title="Land &amp; Official Records Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
         buttonText: "Close",
         buttonIcon: undefined
