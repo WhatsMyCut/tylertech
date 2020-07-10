@@ -33,7 +33,7 @@
 {#if buttonText}
   <button >
     {#if buttonIcon}
-    <img src="/{buttonIcon}.png" alt={buttonText} />
+    <img src="/icons/{buttonIcon}.png" alt={buttonText} />
     {/if}
     {buttonText}</button>
 {/if}

@@ -38,11 +38,11 @@
   figure {
     text-align: center;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     background-color: #131218;
   }
   .container {
-    margin: 0 auto 100px;
+    margin: 0 auto 65px;
     position: relative;
   }
   div.static-content, div.video-content {
@@ -107,18 +107,18 @@
   }
   .hotspot.pedestal1 {
     background: url('/icons/MultiPageDoc_x.svg') center center no-repeat;
-    left: 26.65rem;
-    top: 29.75rem;
+    left: 29.65%;
+    top: 58.5%;
   }
   .hotspot.pedestal2 {
     background: url('/icons/SinglePageDoc_x.svg') center center no-repeat;
-    left: 42.3rem;
-    top: 30.65rem;
+    left: 47%;
+    top: 60.25%;
   }
   .hotspot.pedestal3 {
     background: url('/icons/Video_x.svg') center center no-repeat;
-    left: 58.05rem;
-    top: 29.75rem;
+    left: 64.3%;
+    top: 58.5%;
   }
   .hotspot.hdisplay {
     left: 64%;

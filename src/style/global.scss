@@ -10,14 +10,14 @@
 
 @import "./variables.scss";
 // use the 'static/' folder root
-@include font('Amplitude Bold', '/fonts/Amplitude-Bold');
+@include font('Amplitude-Bold', '/fonts/Amplitude-Bold');
 @include font('Trade Gothic', '/fonts/TradeGothicLTStd');
 
 
 :global(*) {
   box-sizing: border-box;
   background-color: transparent;
-  font-family: "Trade Gothic";
+  font-family: "Trade Gothic", "Amplitude-Bold";
   font-weight: medium;
 }
 
@@ -25,16 +25,17 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: black;
+  background-color: #131218;
 }
 
 :global(body::after) {
+  // image preloader
   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-  content:url('/LOGO-Tyler-Technologies-Color-120.png') url('/static/icons/SinglePageDoc.svg') url('/static/icons/MultiPageDoc.svg') url('/static/icons/Video.svg');   // load images
+  content:url('/LOGO-Tyler-Technologies-Color-120.png') url('/icons/SinglePageDoc.svg') url('/icons/MultiPageDoc.svg') url('/icons/Video.svg') url('/icons/download.png') url('/icons/pdf.png');
 }
 
 :global(.headline) {
-  font-family: "Amplitude Bold";
+  font-family: "Amplitude-Bold";
   font-size: 30px;
   font-weight: normal;
   color: $color-blue;
@@ -51,7 +52,7 @@
 
 :global(button) {
   background-color: $color-blue;
-  font-family: "Amplitude Bold";
+  font-family: "Amplitude-Bold";
   font-weight: 400;
   color: white;
 }
