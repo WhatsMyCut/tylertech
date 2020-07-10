@@ -45,7 +45,6 @@
     margin: 0 auto 100px;
     position: relative;
   }
-
   div.static-content, div.video-content {
     transition: all 50s ease-in-out 1s;
   }
@@ -94,7 +93,9 @@
   .hotspot {
     position: absolute;
     cursor: pointer;
-    border: 1px solid red;
+    background-size: cover;
+    width: 6.5vw;
+    height: 16vh;
   }
   .hotspot.vdisplay {
     left: 15.5%;
@@ -104,9 +105,38 @@
     height: 52.6%;
   }
   .hotspot.pedestal1 {
-    left: 20vw;
-    top: 30vh;
+    background: url('/icons/MultiPageDoc_x.svg') center center no-repeat;
+    left: 29.25vw;
+    top: 89vh;
   }
+  .hotspot.pedestal2 {
+    background: url('/icons/SinglePageDoc_x.svg') center center no-repeat;
+    left: 46.7vw;
+    top: 92vh;
+  }
+  .hotspot.pedestal3 {
+    background: url('/icons/Video_x.svg') center center no-repeat;
+    left: 64.05vw;
+    top: 89.5vh;
+  }
+  .hotspot.pedestal1:active,
+  .hotspot.pedestal2:active,
+  .hotspot.pedestal3:active,
+  .hotspot.pedestal1:hover,
+  .hotspot.pedestal2:hover,
+  .hotspot.pedestal3:hover {
+    box-shadow: 0 0 40px 20px #fff;
+    background-color: rgba(255,255,255,0.8);
+  }
+  .hotspot.hdisplay {
+    left: 15.5%;
+    top: 4.5%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: 17.5%;
+    width: 52.6%;
+    border: 1px solid red;
+  }
+
 </style>
 
 
@@ -118,21 +148,16 @@
 <figure>
   <div class="container static-content {displayVideo}">
     <map name="infographic">
-      <area shape="poly" coords="336,370, 415,370, 415,455, 336,455" class="hotspot"
-            on:click={showModal(section.hotspots.pedestal1)}
-            target="_blank" alt="Pedestal 1" />
-      <area shape="poly" coords="535,385, 620,385, 620,470, 535,470"
-            href={section.hotspots.pedestal2.URL}
-            target="_blank" alt="Pedestal 2" />
-      <area shape="poly" coords="740,375, 820,375, 820,455, 740,455"
-            on:click={showModal(section.hotspots.pedestal3)}
-            target="_blank" alt="Pedestal 3" />
       <area shape="poly" coords="750,110, 1005,115, 990,305, 745,265"
             on:click={showModal(section.hotspots.hdisplay)}
             target="_blank" alt="Horizontal Display" />
     </map>
     <img usemap="#infographic" alt='Tyler Tech Booth' src={background}>
     <div class="hotspot vdisplay" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
+    <div class="hotspot pedestal1" on:click={showModal(section.hotspots.pedestal1)}><svg src="/icons/MultiPageDoc.svg" alt="pdf" width="auto"/></div>
+    <div class="hotspot pedestal2" on:click={showModal(section.hotspots.pedestal2)}>&nbsp;</div>
+    <div class="hotspot pedestal3" on:click={showModal(section.hotspots.pedestal3)}>&nbsp;</div>
+    <div class="hotspot hdisplay" on:click={showModal(section.hotspots.hdisplay)}>&nbsp;</div>
     <div class="ptext pedestal1">{section.hotspots.pedestal1.text}</div>
     <div class="ptext pedestal2">{section.hotspots.pedestal2.text}</div>
     <div class="ptext pedestal3">{section.hotspots.pedestal3.text}</div>
