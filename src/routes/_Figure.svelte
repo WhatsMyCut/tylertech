@@ -66,9 +66,6 @@
     opacity: 0;
     visibility: hidden;
   }
-  .hotspot {
-    cursor: pointer;
-  }
   .ptext {
     position: absolute;
     font-family: "Trade Gothic";
@@ -81,7 +78,7 @@
   }
   .ptext.pedestal1 {
     left: 26%;
-    bottom: 21%;
+    bottom: 22%;
   }
   .ptext.pedestal2 {
     left: 35%;
@@ -97,8 +94,8 @@
     position: absolute;
     cursor: pointer;
     background-size: cover;
-    width: 6.5vw;
-    height: 16vh;
+    width: 5.25rem;
+    height: 5.25rem;
   }
   .hotspot.vdisplay {
     left: 15.5%;
@@ -110,18 +107,18 @@
   }
   .hotspot.pedestal1 {
     background: url('/icons/MultiPageDoc_x.svg') center center no-repeat;
-    left: 29.25vw;
-    top: 89vh;
+    left: 26.65rem;
+    top: 29.75rem;
   }
   .hotspot.pedestal2 {
     background: url('/icons/SinglePageDoc_x.svg') center center no-repeat;
-    left: 46.7vw;
-    top: 92vh;
+    left: 42.3rem;
+    top: 30.65rem;
   }
   .hotspot.pedestal3 {
     background: url('/icons/Video_x.svg') center center no-repeat;
-    left: 64.05vw;
-    top: 89.5vh;
+    left: 58.05rem;
+    top: 29.75rem;
   }
   .hotspot.hdisplay {
     left: 64%;

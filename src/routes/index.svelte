@@ -11,6 +11,12 @@
 </script>
 
 <style>
+  .toc {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+  }
 	ul {
 		margin: 0 0 1em 0;
 		line-height: 1.5;
@@ -22,6 +28,7 @@
 	<title>Tyler Technologies Booth: Home</title>
 </svelte:head>
 
+<div class="toc">
 <h1>Sections</h1>
 
 <ul>
@@ -33,3 +40,4 @@
 		<li><a rel='prefetch' href='/{section.slug}'>{section.title}</a></li>
 	{/each}
 </ul>
+</div>
