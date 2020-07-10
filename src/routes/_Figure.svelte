@@ -72,9 +72,12 @@
   .ptext {
     position: absolute;
     font-family: "Trade Gothic";
-    font-size: 1.2rem;
-    color: white;
+    font-size: 1.25rem;
+    font-weight: 900;
+    font-stretch: condensed;
     text-align: center;
+    letter-spacing: -0.015em;
+    color: white;
   }
   .ptext.pedestal1 {
     left: 26%;
@@ -101,6 +104,7 @@
     left: 15.5%;
     top: 4.5%;
     transform: rotateX(0deg) rotateY(36deg) rotateZ(-11deg) skew(-8deg, 0deg);
+    clip-path: polygon(-1% 0%, 95% 12%, 95% 99.5%, 2% 99%);
     width: 17.5%;
     height: 52.6%;
   }
@@ -119,6 +123,18 @@
     left: 64.05vw;
     top: 89.5vh;
   }
+  .hotspot.hdisplay {
+    left: 64%;
+    top: 16.5%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(4deg) skew(-3deg, 2deg);
+    clip-path: polygon(1% 10%, 96% 0%, 100% 98%, 6% 91%);
+    height: 28.5%;
+    width: 22.6%;
+  }
+  .hotspot.vdisplay:hover,
+  .hotspot.hdisplay:hover {
+    background-color: rgba(255,255,255,0.8);
+  }
   .hotspot.pedestal1:active,
   .hotspot.pedestal2:active,
   .hotspot.pedestal3:active,
@@ -127,14 +143,6 @@
   .hotspot.pedestal3:hover {
     box-shadow: 0 0 40px 20px #fff;
     background-color: rgba(255,255,255,0.8);
-  }
-  .hotspot.hdisplay {
-    left: 15.5%;
-    top: 4.5%;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    height: 17.5%;
-    width: 52.6%;
-    border: 1px solid red;
   }
 
 </style>
@@ -147,14 +155,9 @@
 
 <figure>
   <div class="container static-content {displayVideo}">
-    <map name="infographic">
-      <area shape="poly" coords="750,110, 1005,115, 990,305, 745,265"
-            on:click={showModal(section.hotspots.hdisplay)}
-            target="_blank" alt="Horizontal Display" />
-    </map>
-    <img usemap="#infographic" alt='Tyler Tech Booth' src={background}>
+    <img alt='Tyler Tech Booth' src={background}>
     <div class="hotspot vdisplay" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
-    <div class="hotspot pedestal1" on:click={showModal(section.hotspots.pedestal1)}><svg src="/icons/MultiPageDoc.svg" alt="pdf" width="auto"/></div>
+    <div class="hotspot pedestal1" on:click={showModal(section.hotspots.pedestal1)}><svg src="/icons/MultiPageDoc.svg" alt="pdf" /></div>
     <div class="hotspot pedestal2" on:click={showModal(section.hotspots.pedestal2)}>&nbsp;</div>
     <div class="hotspot pedestal3" on:click={showModal(section.hotspots.pedestal3)}>&nbsp;</div>
     <div class="hotspot hdisplay" on:click={showModal(section.hotspots.hdisplay)}>&nbsp;</div>
