@@ -12,25 +12,22 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-125083838-1');
-  let dataLayer = [{
-    "pageName": section.slug;
-  }]
 </script>
 </svelte:head>
 
-<style global type="text/sass">
+<style type="scss">
   @import "../style/global.scss";
 
-  .main {
-    font-family: 'Trade Gothic';
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 1px;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #131218;
-  }
+.main {
+  font-family: 'Trade Gothic';
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #131218;
+}
 </style>
 
 <Nav/>

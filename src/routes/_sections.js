@@ -77,6 +77,9 @@ const sections = [{
         text: "Product Information",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" />',
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal3": {
         type: "pedestal3",
@@ -84,6 +87,9 @@ const sections = [{
         text: "Read Success Story",
         icon: "/icons/SinglePageDoc.svg",
         content: '<img src="/icons/SinglePageDoc.svg" alt="PDF" height="80" />',
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "hdisplay": {
         type: "horiz-display",
