@@ -33,6 +33,10 @@ li {
   float: left;
 }
 
+.message {
+  display: none;
+}
+
 // [aria-current] {
 //   position: relative;
 //   display: inline-block;
@@ -50,4 +54,15 @@ a {
   text-decoration: none;
   padding: 0;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .message {
+    display: block;
+    background-color: orange;
+    color: white;
+    text-shadow: 1px 1px 2px 2px #333;
+    text-align: center;
+    padding: 5px;
+  }
 }
