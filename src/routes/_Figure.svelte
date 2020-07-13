@@ -30,8 +30,8 @@
     ended = true;
   }
 
-  $: displayVideo = ended ? 'none' : 'block';
-  // $: displayImage = !ended ? 'block' : 'none';
+  // $: displayVideo = ended ? 'none' : 'block';
+  $: displayImage = ended ? 'block' : 'none';
 </script>
 
 <style type="text/sass">
@@ -48,15 +48,15 @@
     height: 89vh;
   }
   div.static-content, div.video-content {
-    transition: all 2s ease-in-out 1s;
     width: 100%;
     height: auto;
   }
   div.video-content {
-    z-index: 1;
+    z-index: 0;
   }
   div.static-content {
-    z-index: 0;
+    z-index: 1;
+    transition: all 2s ease-in-out;
   }
   img {
     width: 100%;
@@ -99,9 +99,9 @@
   .hotspot {
     position: absolute;
     cursor: pointer;
-    background-size: cover;
-    width: 5.25rem;
-    height: 5.25rem;
+    background-size: contain;
+    width: 3.25rem;
+    height: 3.25rem;
   }
   .hotspot.vdisplay {
     left: 15.5%;
@@ -157,18 +157,18 @@
 
 
 <figure>
-  <div class="container static-content">
+  <div class="container static-content {displayImage}">
     <img alt='Tyler Tech Booth' src={background}>
     <div class="hotspot vdisplay" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
-    <div class="hotspot pedestal1" on:click={showModal(section.hotspots.pedestal1)}><svg src="/icons/MultiPageDoc.svg" alt="pdf" /></div>
-    <div class="hotspot pedestal2" on:click={showModal(section.hotspots.pedestal2)}>&nbsp;</div>
-    <div class="hotspot pedestal3" on:click={showModal(section.hotspots.pedestal3)}>&nbsp;</div>
+    <div class="hotspot pedestal1" on:click={showModal(section.hotspots.pedestal1)}><svg src="{section.hotspots.pedestal1.icon}" alt={section.hotspots.pedestal1.type} /></div>
+    <div class="hotspot pedestal2" on:click={showModal(section.hotspots.pedestal2)}><svg src="{section.hotspots.pedestal2.icon}" alt={section.hotspots.pedestal2.type} /></div>
+    <div class="hotspot pedestal3" on:click={showModal(section.hotspots.pedestal3)}><svg src="{section.hotspots.pedestal3.icon}" alt={section.hotspots.pedestal3.type} /></div>
     <div class="hotspot hdisplay" on:click={showModal(section.hotspots.hdisplay)}>&nbsp;</div>
     <div class="ptext pedestal1">{section.hotspots.pedestal1.text}</div>
     <div class="ptext pedestal2">{section.hotspots.pedestal2.text}</div>
     <div class="ptext pedestal3">{section.hotspots.pedestal3.text}</div>
   </div>
-  <div class="container video-content {displayVideo}">
+  <div class="container video-content">
     <VideoPlayer { section } { handleVideoEnd } />
   </div>
 
