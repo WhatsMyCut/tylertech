@@ -26,14 +26,13 @@ em {
   font-size: 9px;
   font-style: italic;
   font-weight: 100;
-  padding: 2px 25px 0 0;
+  padding: 2px 2em 0 0;
   vertical-align: baseline;
 }
 
 .right {
   text-align: right;
   justify-content: flex-end;
-  padding-right: 80px;
 }
 
 a {
@@ -43,4 +42,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
