@@ -3,6 +3,18 @@
 	import Footer from '../components/Footer.svelte';
 </script>
 
+<svelte:head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125083838-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125083838-1');
+</script>
+</svelte:head>
+
 <style global type="text/sass">
   @import "../style/global.scss";
 
