@@ -19,7 +19,7 @@ const sections = [{
         URL: "https://empower.tylertech.com/Appraisal-and-Tax-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
+        type: "Brochure",
         URL: "https://www.tylertech.com/at-1",
         text: "Product Information",
         icon: "/icons/MultiPageDoc.svg",
@@ -29,7 +29,7 @@ const sections = [{
         buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
+        type: "PDF",
         URL: "https://www.tylertech.com/at-2",
         text: "Read Success Story",
         icon: "/icons/SinglePageDoc.svg",
@@ -39,7 +39,7 @@ const sections = [{
         buttonOnClick: "downloadDoc",
       },
       "pedestal3": {
-        type: "pedestal3",
+        type: "Video",
         text: "Watch Video",
         icon: "/icons/Video.svg",
         content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
@@ -62,31 +62,28 @@ const sections = [{
         URL: "https://empower.tylertech.com/Civic-Services-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
+        type: "Brochure",
         URL: "https://www.tylertech.com/cs-1",
         text: "Product Information",
         icon: "/icons/MultiPageDoc.svg",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" /><p>EnerGov Product Overview</p>',
+        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" /><p>EnerGov Product Overview</p>',
         buttonText: "Download",
         buttonIcon: "download",
         buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
-        URL: undefined,
-        text: "Watch Video",
-        icon: "/icons/Video.svg",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/2zox5p14e0?videoFoam=true" title="Tyler Jury Video Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
+        type: "Brochure",
+        URL: "https://www.tylertech.com/cs-2",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" /><p>Product Overview</p>',
       },
       "pedestal3": {
         type: "pedestal3",
-        URL: "https://www.tylertech.com/cjc-2",
+        URL: "https://www.tylertech.com/cs-3",
         text: "Read Success Story",
         icon: "/icons/SinglePageDoc.svg",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: "Download",
-        buttonIcon: "download",
-        buttonOnClick: 'downloadDoc'
+        content: '<img src="/icons/SinglePageDoc.svg" alt="PDF" height="80" /><p>EnerGov Product Overview</p>',
       },
       "hdisplay": {
         type: "horiz-display",

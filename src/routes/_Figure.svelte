@@ -81,19 +81,21 @@
     text-align: center;
     letter-spacing: -0.015em;
     color: white;
+    text-align: center;
+    align-self: center;
   }
   .ptext.pedestal1 {
-    left: 26%;
+    left: 24%;
     bottom: 22%;
   }
   .ptext.pedestal2 {
     left: 35%;
-    bottom: 18.5%;
+    bottom: 17%;
     width: auto;
     right: 35%;
   }
   .ptext.pedestal3 {
-    left: 61.5%;
+    right: 23.5%;
     bottom: 21%;
   }
   .hotspot {
@@ -101,7 +103,7 @@
     cursor: pointer;
     background-size: contain;
     width: 3.25rem;
-    height: 3.25rem;
+    height: auto;
   }
   .hotspot.vdisplay {
     left: 15.5%;
@@ -112,18 +114,15 @@
     height: 52.6%;
   }
   .hotspot.pedestal1 {
-    background: url('/icons/MultiPageDoc_x.svg') center center no-repeat;
-    left: 29.65%;
-    top: 58.5%;
+    left: 30%;
+    top: 58.35%;
   }
   .hotspot.pedestal2 {
-    background: url('/icons/SinglePageDoc_x.svg') center center no-repeat;
-    left: 47%;
+    left: 47.25%;
     top: 60.25%;
   }
   .hotspot.pedestal3 {
-    background: url('/icons/Video_x.svg') center center no-repeat;
-    left: 64.3%;
+    right: 29.75%;
     top: 58.5%;
   }
   .hotspot.hdisplay {
@@ -148,6 +147,9 @@
     background-color: rgba(255,255,255,0.8);
   }
 
+  @media (min-width: 680px) {
+  }
+
 </style>
 
 
@@ -159,14 +161,14 @@
 <figure>
   <div class="container static-content {displayImage}">
     <img alt='Tyler Tech Booth' src={background}>
-    <div class="hotspot vdisplay" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
-    <div class="hotspot pedestal1" on:click={showModal(section.hotspots.pedestal1)}><svg src="{section.hotspots.pedestal1.icon}" alt={section.hotspots.pedestal1.type} /></div>
-    <div class="hotspot pedestal2" on:click={showModal(section.hotspots.pedestal2)}><svg src="{section.hotspots.pedestal2.icon}" alt={section.hotspots.pedestal2.type} /></div>
-    <div class="hotspot pedestal3" on:click={showModal(section.hotspots.pedestal3)}><svg src="{section.hotspots.pedestal3.icon}" alt={section.hotspots.pedestal3.type} /></div>
-    <div class="hotspot hdisplay" on:click={showModal(section.hotspots.hdisplay)}>&nbsp;</div>
-    <div class="ptext pedestal1">{section.hotspots.pedestal1.text}</div>
-    <div class="ptext pedestal2">{section.hotspots.pedestal2.text}</div>
-    <div class="ptext pedestal3">{section.hotspots.pedestal3.text}</div>
+    <div class="hotspot vdisplay {section.slug}" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
+    <div class="hotspot pedestal1 {section.slug}" on:click={showModal(section.hotspots.pedestal1)}><img src="{section.hotspots.pedestal1.icon}" alt={section.hotspots.pedestal1.type} /></div>
+    <div class="hotspot pedestal2 {section.slug}" on:click={showModal(section.hotspots.pedestal2)}><img src="{section.hotspots.pedestal2.icon}" alt={section.hotspots.pedestal2.type} /></div>
+    <div class="hotspot pedestal3 {section.slug}" on:click={showModal(section.hotspots.pedestal3)}><img src="{section.hotspots.pedestal3.icon}" alt={section.hotspots.pedestal3.type} /></div>
+    <div class="hotspot hdisplay {section.slug}" on:click={showModal(section.hotspots.hdisplay)}>&nbsp;</div>
+    <div class="ptext pedestal1 {section.slug}">{section.hotspots.pedestal1.text}</div>
+    <div class="ptext pedestal2 {section.slug}">{section.hotspots.pedestal2.text}</div>
+    <div class="ptext pedestal3 {section.slug}">{section.hotspots.pedestal3.text}</div>
   </div>
   <div class="container video-content">
     <VideoPlayer { section } { handleVideoEnd } />
