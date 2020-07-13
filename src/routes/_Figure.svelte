@@ -37,7 +37,7 @@
 <style type="text/sass">
   figure {
     text-align: center;
-    margin: 0px 20%;
+    margin: 0px 17%;
     height: 75vh;
     background-color: #131218;
     position: relative;
@@ -49,7 +49,8 @@
   }
   div.static-content, div.video-content {
     transition: all 2s ease-in-out 1s;
-    width: auto;
+    width: 100%;
+    height: auto;
   }
   div.video-content {
     z-index: 1;
