@@ -66,7 +66,7 @@ const sections = [{
         URL: "https://www.tylertech.com/cs-1",
         text: "Product Information",
         icon: "/icons/MultiPageDoc.svg",
-        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" /><p>EnerGov Product Overview</p>',
+        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" />',
         buttonText: "Download",
         buttonIcon: "download",
         buttonOnClick: "downloadDoc"
@@ -76,14 +76,14 @@ const sections = [{
         URL: "https://www.tylertech.com/cs-2",
         text: "Product Information",
         icon: "/icons/MultiPageDoc.svg",
-        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" /><p>Product Overview</p>',
+        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" />',
       },
       "pedestal3": {
         type: "pedestal3",
         URL: "https://www.tylertech.com/cs-3",
         text: "Read Success Story",
         icon: "/icons/SinglePageDoc.svg",
-        content: '<img src="/icons/SinglePageDoc.svg" alt="PDF" height="80" /><p>EnerGov Product Overview</p>',
+        content: '<img src="/icons/SinglePageDoc.svg" alt="PDF" height="80" />',
       },
       "hdisplay": {
         type: "horiz-display",

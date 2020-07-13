@@ -147,7 +147,10 @@
     background-color: rgba(255,255,255,0.8);
   }
 
-  @media (min-width: 680px) {
+  @media (max-width: 767px) {
+    figure {
+      display: none;
+    }
   }
 
 </style>
