@@ -12,6 +12,9 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-125083838-1');
+  let dataLayer = [{
+    "pageName": section.slug;
+  }]
 </script>
 </svelte:head>
 

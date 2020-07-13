@@ -28,10 +28,24 @@
     handleVideoEnd(ended);
   }
 
+  function handleAutoPlay() {
+    let video;
+    if(!video) {
+      video = document.getElementsByTagName('video');
+    }
+    console.log('handleAutoPlay', video);
+    try {
+      video.play();
+    } catch (e) {}
+  }
+
+
   onMount(() => {
     videoURL = (supportsVideoType('webm') === "probably") ? section.webm : section.mp4;
   });
 </script>
+
+<!-- <svelte:window on:load={handleAutoPlay}/> -->
 
 <script context="module">
   // These values are bound to properties of the video

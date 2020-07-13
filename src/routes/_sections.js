@@ -53,7 +53,7 @@ const sections = [{
   {
     title: "Civic Services",
     slug: "civic-services",
-    background: "/backgrounds/tylertech_booth_02_civic_services_X.jpg",
+    background: "/backgrounds/tylertech_booth_02_civic_services.jpg",
     mp4: "/videos/tylertech_booth_02_civic_services.mp4",
     webm: "/videos/tylertech_booth_02_civic_services.webm",
     hotspots: {
