@@ -30,41 +30,46 @@
     ended = true;
   }
 
-  $: displayVideo = !ended ? 'none' : 'block';
-  $: displayImage = !ended ? 'block' : 'none';
+  $: displayVideo = ended ? 'none' : 'block';
+  // $: displayImage = !ended ? 'block' : 'none';
 </script>
 
 <style type="text/sass">
   figure {
     text-align: center;
-    margin: 0 auto;
-    width: 100vw;
+    margin: 0px 20%;
+    height: 75vh;
     background-color: #131218;
-  }
-  .container {
-    margin: 0 auto 65px;
     position: relative;
   }
+  .container {
+    position: absolute;
+    margin: 0 auto;
+    height: 89vh;
+  }
   div.static-content, div.video-content {
-    transition: all 50s ease-in-out 1s;
+    transition: all 2s ease-in-out 1s;
+    width: auto;
+  }
+  div.video-content {
+    z-index: 1;
+  }
+  div.static-content {
+    z-index: 0;
   }
   img {
-    height: auto;
     width: 100%;
+    height: auto;
   }
   .booth-headline {
     font-size: 22px;
     margin: 0 0 10px;
   }
   .block {
-    display: block;
     opacity: 1;
-    visibility: visible;
   }
   .none {
-    display: none;
     opacity: 0;
-    visibility: hidden;
   }
   .ptext {
     position: absolute;
@@ -151,7 +156,7 @@
 
 
 <figure>
-  <div class="container static-content {displayVideo}">
+  <div class="container static-content">
     <img alt='Tyler Tech Booth' src={background}>
     <div class="hotspot vdisplay" on:click={openLink(section.hotspots.vdisplay.URL)}>&nbsp;</div>
     <div class="hotspot pedestal1" on:click={showModal(section.hotspots.pedestal1)}><svg src="/icons/MultiPageDoc.svg" alt="pdf" /></div>
@@ -162,7 +167,7 @@
     <div class="ptext pedestal2">{section.hotspots.pedestal2.text}</div>
     <div class="ptext pedestal3">{section.hotspots.pedestal3.text}</div>
   </div>
-  <div class="container video-content {displayImage}">
+  <div class="container video-content {displayVideo}">
     <VideoPlayer { section } { handleVideoEnd } />
   </div>
 

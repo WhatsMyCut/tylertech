@@ -88,12 +88,12 @@
 </script>
 
 <style>
-  div.video-player {
+  .video-player {
     position: relative;
     width: 100%;
   }
 
-  .controls {
+  /* .controls {
     position: absolute;
     top: 0;
     width: 100%;
@@ -134,15 +134,11 @@
 
   progress::-webkit-progress-value {
     background-color: rgba(255,255,255,0.6);
-  }
-
-  video {
-    width: 100%;
-  }
+  } */
 </style>
 
-<div class="video-player">
   <video
+    class="video-player"
     autoplay
     poster={section.background}
     src={videoURL}
@@ -153,9 +149,10 @@
     bind:duration
     bind:paused
     bind:ended
+
   ></video>
 
-  <div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
+  <!-- <div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
     <progress value="{(time / duration) || 0}"/>
 
     <div class="info">
@@ -163,5 +160,4 @@
       <span>click anywhere to {paused ? 'play' : 'pause'} / drag to seek</span>
       <span class="time">{format(duration)}</span>
     </div>
-  </div>
-</div>
+  </div> -->
