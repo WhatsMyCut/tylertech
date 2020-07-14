@@ -236,39 +236,45 @@ const sections = [{
     slug: "public-safety",
     background: "/backgrounds/tylertech_booth_06_public_safety.jpg",
     mp4: "/videos/tylertech_booth_06_public_safety.mp4",
-    webm: "/videos/tylertech_booth_06_public_safety.mp4",
+    webm: "/videos/tylertech_booth_06_public_safety.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
         URL: "https://empower.tylertech.com/Public-Safety-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
-        URL: "https://www.tylertech.com/at-1",
-        text: "Public Safety Solutions",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        type: "Brochure",
+        URL: "https://www.tylertech.com/ps-1",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
-        URL: "https://www.tylertech.com/at-2",
-        text: "Update Your Antiquated System",
-        content: "/icons/video.png",
+        type: "Brochure",
+        URL: "https://www.tylertech.com/ps-2",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal3": {
-        type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
-        text: "Your Property Taxes",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: 'Close',
-        buttonIcon: undefined
+        type: "Brochure",
+        URL: "https://www.tylertech.com/ps-3",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/c32b64ivg4?videoFoam=true" title="Public Safety Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       }
     }
   },
@@ -277,39 +283,45 @@ const sections = [{
     slug: "schools",
     background: "/backgrounds/tylertech_booth_07_schools.jpg",
     mp4: "/videos/tylertech_booth_07_schools.mp4",
-    webm: "/videos/tylertech_booth_07_schools.mp4",
+    webm: "/videos/tylertech_booth_07_schools.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
         URL: "https://empower.tylertech.com/Schools-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
-        URL: "https://www.tylertech.com/schools-7",
-        text: "Schools Solutions",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        type: "Brochure",
+        URL: "https://www.tylertech.com/schools-1",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
-        URL: "https://www.tylertech.com/schools-7",
-        text: "Update Your Antiquated System",
-        content: "/icons/video.png",
+        type: "Brochure",
+        URL: "https://www.tylertech.com/schools-2",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal3": {
-        type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
-        text: "Your Property Taxes",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: 'Close',
-        buttonIcon: undefined
+        type: "Brochure",
+        URL: "https://www.tylertech.com/schools-3",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/1ehd363ro2?videoFoam=true" title="Schools Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>',
       }
     }
   },
@@ -318,39 +330,45 @@ const sections = [{
     slug: "total-tyler",
     background: "/backgrounds/tylertech_booth_08_total_tyler.jpg",
     mp4: "/videos/tylertech_booth_08_total_tyler.mp4",
-    webm: "/videos/tylertech_booth_08_total_tyler.mp4",
+    webm: "/videos/tylertech_booth_08_total_tyler.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Total-Tyler-Virtual-Trade-Show.html",
+        URL: "https://empower.tylertech.com/Total-Schools-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
-        URL: "https://www.tylertech.com/total-tyler-8",
-        text: "Total Tyler Solutions",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        type: "Brochure",
+        URL: "https://www.tylertech.com/tt-1",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
-        URL: "https://www.tylertech.com/total-tyler-8",
-        text: "Update Your Antiquated System",
-        content: "/icons/video.png",
+        type: "Brochure",
+        URL: "https://www.tylertech.com/tt-2",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal3": {
-        type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
-        text: "Your Property Taxes",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: 'Close',
-        buttonIcon: undefined
+        type: "Brochure",
+        URL: "https://www.tylertech.com/tt-3",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/xzn9pkevzo?videoFoam=true" title="Tyler Technologies Virtual Trade Show Video " allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       }
     }
   }
