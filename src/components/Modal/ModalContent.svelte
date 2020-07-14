@@ -3,7 +3,7 @@
   export let content;
   export let buttonText;
   export let buttonIcon;
-
+  export let buttonOnClick;
 </script>
 
 <style type="text/scss">
@@ -21,19 +21,21 @@
   button {
     background-color: #21578A;
     padding: 5px;
+    cursor: pointer;
   }
   img {
     height: 15px;
     margin-right: 10px;
   }
 </style>
-
+<div>
 <div class="content">{@html content}</div>
 <div class="message">{message}</div>
 {#if buttonText}
-  <button >
+  <button on:click={buttonOnClick}>
     {#if buttonIcon}
     <img src="/icons/{buttonIcon}.png" alt={buttonText} />
     {/if}
     {buttonText}</button>
 {/if}
+</div>

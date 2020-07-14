@@ -18,7 +18,8 @@
     padding: 2rem;
   }
 	ul {
-		margin: 0 0 1em 0;
+    margin: 1em 0;
+    padding: 0;
 		line-height: 1.5;
     list-style-type: none;
 	}

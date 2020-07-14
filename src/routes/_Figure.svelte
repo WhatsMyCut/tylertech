@@ -12,6 +12,7 @@
   let content;
   let buttonText;
   let buttonIcon;
+  let buttonOnClick;
 
   const { open } = getContext('simple-modal');
 	const showModal = (hotspot) => {
@@ -19,8 +20,9 @@
     content = hotspot.content || '';
     buttonText =  hotspot.buttonText || '';
     buttonIcon = hotspot.buttonIcon || '';
-    console.log('showModal', {message, content, buttonText, buttonIcon})
-		open(ModalContent, { message, buttonText, buttonIcon, content });
+    buttonOnClick = () => openLink(hotspot.URL || '');
+    console.log('showModal', {message, content, buttonText, buttonIcon, buttonOnClick})
+		open(ModalContent, { message, buttonText, buttonIcon, buttonOnClick, content });
   };
 
   const openLink = (url) => {
@@ -86,7 +88,7 @@
     align-self: center;
   }
   .ptext.pedestal1 {
-    left: 24%;
+    left: 23.5%;
     bottom: 22%;
   }
   .ptext.pedestal2 {
@@ -96,7 +98,7 @@
     right: 35%;
   }
   .ptext.pedestal3 {
-    right: 23.5%;
+    right: 26.5%;
     bottom: 21%;
   }
   .hotspot {
@@ -153,7 +155,7 @@
     and (min-device-height: 840px)
     {
       figure {
-        max-width: 1380px;
+        max-width: 950px;
         margin: auto;
       }
     }
