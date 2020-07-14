@@ -149,28 +149,21 @@
   }
 
   @media only screen
-  and (max-width: 768px)
+    and (min-device-width: 1025px)
+    and (min-device-height: 840px)
+    {
+      figure {
+        max-width: 1380px;
+        margin: auto;
+      }
+    }
+  @media only screen
+  and (max-device-width: 823px)
   and (-webkit-min-device-pixel-ratio: 2) {
     figure {
       display: none;
     }
   }
-  @media only screen
-    and (max-height: 480px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-    figure {
-      width: 100%;
-      margin: 0;
-    }
-  }
-
-  @media only screen
-    and (max-height: 823px)
-    and (min-width: 1024px) {
-      figure {
-        max-width: 1025px;
-      }
-    }
 </style>
 
 <svelte:head>
