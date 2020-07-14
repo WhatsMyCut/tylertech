@@ -101,6 +101,9 @@
     right: 23.5%;
     bottom: 21%;
   }
+  .ptext.pedestal3.appraisal-and-tax {
+    right: 26.5%;
+  }
   .hotspot {
     position: absolute;
     cursor: pointer;

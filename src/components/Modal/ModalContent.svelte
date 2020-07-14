@@ -30,7 +30,9 @@
 </style>
 <div>
 <div class="content">{@html content}</div>
+{#if message}
 <div class="message">{message}</div>
+{/if}
 {#if buttonText}
   <button on:click={buttonOnClick}>
     {#if buttonIcon}
