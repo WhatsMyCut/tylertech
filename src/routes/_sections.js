@@ -42,7 +42,7 @@ const sections = [{
         type: "Video",
         text: "Watch Video",
         icon: "/icons/Video.svg",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/vflet52iog?videoFoam=true" title="Land &amp; Official Records Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       },
       "hdisplay": {
         type: "horiz-display",
@@ -93,7 +93,7 @@ const sections = [{
       },
       "hdisplay": {
         type: "horiz-display",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/vflet52iog?videoFoam=true" title="Land &amp; Official Records Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/faila5eefq?videoFoam=true" title="EnerGov Efficiency Stats Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       }
     }
   },
@@ -102,39 +102,41 @@ const sections = [{
     slug: "courts",
     background: "/backgrounds/tylertech_booth_03_courts.jpg",
     mp4: "/videos/tylertech_booth_03_courts.mp4",
-    webm: "/videos/tylertech_booth_03_courts.mp4",
+    webm: "/videos/tylertech_booth_03_courts.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Courts-Virtual-Trade-Show.html",
+        URL: "https://empower.tylertech.com/Courts-and-Justice-State-and-County-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
+        type: "Brochure",
         URL: "https://www.tylertech.com/cjc-1",
         text: "Product Information",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
-        URL: "https://www.tylertech.com/at-2",
+        type: "Brochure",
         text: "Watch Video",
-        content: "/icons/video.png",
-        buttonText: "Download",
-        buttonIcon: "download"
+        icon: "/icons/Video.svg",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/2zox5p14e0?videoFoam=true" title="Tyler Jury Video Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       },
       "pedestal3": {
         type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
+        URL: "https://www.tylertech.com/cjc-2",
         text: "Read Success Story",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: 'Close',
-        buttonIcon: undefined
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" />',
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g3nbz8cvq9?videoFoam=true" title="Courts &amp; Justice - State &amp; County Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       }
     }
   },
@@ -143,39 +145,45 @@ const sections = [{
     slug: "erp",
     background: "/backgrounds/tylertech_booth_04_erp.jpg",
     mp4: "/videos/tylertech_booth_04_erp.mp4",
-    webm: "/videos/tylertech_booth_04_erp.mp4",
+    webm: "/videos/tylertech_booth_04_erp.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
         URL: "https://empower.tylertech.com/ERP-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
-        URL: "https://www.tylertech.com/at-1",
-        text: "ERP Solutions",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        type: "Brochure",
+        URL: "https://www.tylertech.com/erp-1",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
-        URL: "https://www.tylertech.com/at-2",
-        text: "Update Your Antiquated System",
-        content: "/icons/video.png",
+        type: "Brochure",
+        URL: "https://www.tylertech.com/erp-2",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal3": {
-        type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
-        text: "Your Property Taxes",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: 'Close',
-        buttonIcon: undefined
+        type: "PDF",
+        URL: "https://www.tylertech.com/erp-2",
+        text: "Read Success Story",
+        icon: "/icons/SinglePageDoc.svg",
+        content: '<img src="/icons/SinglePageDoc.svg" alt="Brochure" height="80" />',
+        buttonText: "Download",
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/a4adk3gsvm?videoFoam=true" title="ERP Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       }
     }
   },
