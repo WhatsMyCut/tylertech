@@ -98,7 +98,7 @@
     right: 35%;
   }
   .ptext.pedestal3 {
-    right: 26.5%;
+    right: 23.5%;
     bottom: 21%;
   }
   .hotspot {

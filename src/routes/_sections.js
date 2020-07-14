@@ -113,7 +113,7 @@ const sections = [{
         URL: "https://www.tylertech.com/cjc-1",
         text: "Product Information",
         icon: "/icons/MultiPageDoc.svg",
-        content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" />',
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
         buttonIcon: "download",
         buttonOnClick: "downloadDoc"
@@ -192,39 +192,42 @@ const sections = [{
     slug: "courts-municipal",
     background: "/backgrounds/tylertech_booth_05_courts_municipal.jpg",
     mp4: "/videos/tylertech_booth_05_courts_municipal.mp4",
-    webm: "/videos/tylertech_booth_05_courts_municipal.mp4",
+    webm: "/videos/tylertech_booth_05_courts_municipal.webm",
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Courts-Municipal-Virtual-Trade-Show.html",
+        URL: "https://empower.tylertech.com/Courts-and-Justice-Municipal-Virtual-Trade-Show.html",
       },
       "pedestal1": {
-        type: "pedestal1",
-        URL: "https://www.tylertech.com/at-1",
-        text: "Courts Municipal Solutions",
-        content: '<img src="/icons/pdf.png" alt="PDF" height="80" />',
+        type: "Brochure",
+        URL: "https://www.tylertech.com/jcm-1",
+        text: "Product Information",
+        icon: "/icons/MultiPageDoc.svg",
+        content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "pedestal2",
-        URL: "https://www.tylertech.com/at-2",
-        text: "Update Your Antiquated System",
-        content: "/icons/video.png",
+        type: "PDF",
+        URL: "https://www.tylertech.com/jcm-1",
+        text: "Product Information",
+        icon: "/icons/SinglePageDoc.svg",
+        content: '<img src="/icons/SinglePageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
-        buttonIcon: "download"
+        buttonIcon: "download",
+        buttonOnClick: "downloadDoc"
       },
       "pedestal3": {
-        type: "pedestal3",
-        URL: "http://www.hotspot4.url/",
-        text: "Your Property Taxes",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/g0zs4o4603?videoFoam=true" title="CLT Assessment Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
-        buttonText: 'Close',
-        buttonIcon: undefined
+        type: "Video",
+        URL: "https://www.tylertech.com/jcm-1",
+        text: "Product Information",
+        icon: "/icons/Video.svg",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/6ne3y9holm?videoFoam=true" title="Incode Court Virtual Court Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       },
       "hdisplay": {
         type: "horiz-display",
-        URL: "http://www.hotspot5.url/",
+        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/6bkz5wk62y?videoFoam=true" title="Incode Court Case Resolution Virtual Trade Show Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
       }
     }
   },
