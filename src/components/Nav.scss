@@ -37,19 +37,6 @@ li {
   display: none;
 }
 
-// [aria-current] {
-//   position: relative;
-//   display: inline-block;
-// }
-// [aria-current]::after {
-//   position: absolute;
-//   content: '';
-//   width: calc(100% - 1em);
-//   height: 2px;
-//   background-color: rgb(255,62,0);
-//   display: block;
-//   bottom: -1px;
-// }
 a {
   text-decoration: none;
   padding: 0;
@@ -57,7 +44,7 @@ a {
 }
 
 @media only screen
- and (max-width: 767px)
+ and (max-width: 823px)
  and (-webkit-min-device-pixel-ratio: 1) {
   .message {
     display: block;
@@ -67,10 +54,6 @@ a {
     text-align: center;
     padding: 5px;
   }
-}
-@media only screen
-  and (max-height: 767px)
-  and (-webkit-min-device-pixel-ratio: 1) {
   .nav {
     padding: 27px 5px 30px 38px;
   }

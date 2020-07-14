@@ -16,8 +16,6 @@
 </svelte:head>
 
 <style type="scss">
-  @import "../style/global.scss";
-
 .main {
   font-family: 'Trade Gothic';
   position: relative;

@@ -2,7 +2,7 @@
 	<title>About</title>
 </svelte:head>
 
-<style type="text/sass">
+<style lang="scss">
   @import '../style/global.scss';
 </style>
 
