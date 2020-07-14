@@ -154,6 +154,7 @@
   <video
     class="video-player"
     autoplay
+    muted
     poster={section.background}
     src={videoURL}
     on:mousemove={handleMousemove}
