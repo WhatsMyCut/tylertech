@@ -1,7 +1,6 @@
 FROM node:12-alpine
 
 WORKDIR /usr/src/app
-RUN npm install -g yarn
 COPY package*.json ./
 RUN yarn install
 
