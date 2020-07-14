@@ -211,7 +211,7 @@ const sections = [{
       "pedestal2": {
         type: "PDF",
         URL: "https://www.tylertech.com/jcm-1",
-        text: "Product Information",
+        text: "Show Video",
         icon: "/icons/SinglePageDoc.svg",
         content: '<img src="/icons/SinglePageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
