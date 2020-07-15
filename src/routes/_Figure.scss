@@ -111,11 +111,17 @@ img {
   background-color: rgba(255,255,255,0.8);
 }
 
-@media (max-width: 767px){
+@media (min-width:822px){
+  figure {
+    display: block;
+  }
+}
+@media (max-width:823px){
   figure {
     display: none;
   }
 }
+
 @media only screen
   and (max-height: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {

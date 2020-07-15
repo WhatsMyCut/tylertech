@@ -43,18 +43,28 @@ a {
   display: block;
 }
 
+.message {
+  background-color: #8c944d;
+  color: white;
+  text-shadow: 1px 1px 2px #333;
+  text-align: center;
+  padding: 5px;
+}
+
 @media only screen
   and (max-width: 823px)
   and (-webkit-min-device-pixel-ratio: 1) {
-  .message {
-    display: block;
-    background-color: #8c944d;
-    color: white;
-    text-shadow: 1px 1px 2px #333;
-    text-align: center;
-    padding: 5px;
-  }
   .nav {
     padding: 27px 5px 30px 38px;
+  }
+}
+@media (min-width:822px){
+  .message {
+    display: none;
+  }
+}
+@media (max-width:823px){
+  .message {
+    display: block;
   }
 }
