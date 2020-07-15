@@ -145,12 +145,11 @@
     height: 1.5rem;
     border: 0;
     background: url('/icons/btn_close.png') center center no-repeat;
+    opacity: 0.5;
   }
 
   .close:hover {
-    border: 1px solid #21578A;
-    border-radius: 15%;
-    padding: 5px;
+    opacity: 1;
   }
 
   .close:hover:before, .close:hover:after {

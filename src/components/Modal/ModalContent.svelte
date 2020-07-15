@@ -24,6 +24,9 @@
     cursor: pointer;
     border: 0;
   }
+  button:hover {
+    opacity: 0.8;
+  }
   img {
     height: 15px;
     margin-right: 10px;
