@@ -16,7 +16,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Appraisal-and-Tax-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/at-3",
       },
       "pedestal1": {
         type: "Brochure",
@@ -59,7 +59,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Civic-Services-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/cs-4",
       },
       "pedestal1": {
         type: "Brochure",
@@ -106,7 +106,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Courts-and-Justice-State-and-County-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/cjc-3",
       },
       "pedestal1": {
         type: "Brochure",
@@ -149,7 +149,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/ERP-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/erp-4",
       },
       "pedestal1": {
         type: "Brochure",
@@ -196,7 +196,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Courts-and-Justice-Municipal-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/cjm-3",
       },
       "pedestal1": {
         type: "Brochure",
@@ -240,7 +240,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Public-Safety-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/ps-4",
       },
       "pedestal1": {
         type: "Brochure",
@@ -287,7 +287,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Schools-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/schools-4",
       },
       "pedestal1": {
         type: "Brochure",
@@ -334,7 +334,7 @@ const sections = [{
     hotspots: {
       "vdisplay": {
         type: "vert-display",
-        URL: "https://empower.tylertech.com/Tyler-Virtual-Trade-Show.html",
+        URL: "https://www.tylertech.com/tt-4",
       },
       "pedestal1": {
         type: "Brochure",
