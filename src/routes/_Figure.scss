@@ -3,14 +3,15 @@ figure {
   text-align: center;
   margin: 0px;
   height: 75vh;
+  max-width: 100%;
   background-color: #131218;
   position: relative;
+  margin: auto;
 }
 .container {
   position: absolute;
   margin: 0 auto;
   width: 100%;
-  max-height: 89vh;
   height: 100%;
 }
 div.static-content, div.video-content {
@@ -115,21 +116,21 @@ img {
   box-shadow: 0 0 40px 20px #fff;
   background-color: rgba(255,255,255,0.8);
 }
-
 @media only screen
   and (min-device-width:822px) and (max-width:1239px) {
   figure {
     display: block;
+    max-height: 75vh;
     height: 75vh;
-    width: 100%;
-    margin:0;
+    margin: auto;
   }
 }
 @media only screen
-  and (min-width: 1239px) {
+  and (min-width: 968px)
+  and (min-width: 1500px) {
   figure {
-    max-width: 1240px; // iPad Pro
-    max-height: 768px;
+    max-width: 75vw;
+    max-height: 75vh;
     margin: auto;
   }
   .ptext.pedestal1 {
@@ -140,20 +141,29 @@ img {
   }
 }
 @media only screen
-  and (max-width: 1240px) {
+  and (min-device-width: 1366px)
+  and (max-device-height: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) { // smaller laptop screens with retina display
   figure {
-    max-width: 1240px;
-    margin: auto;
+    max-width: 1024px;
   }
 }
 @media only screen
-  and (max-device-width: 1366px)
+  and (max-width: 1366px)
+  and (height: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {// iPad Pro
   figure {
-    max-width: 1366px;
-    margin: auto;
+    min-width: 1366px;
   }
 }
+@media only screen
+  and (max-device-height: 768px)
+  and (min-device-width: 1240px) {
+    figure {
+      max-width: 75vw;
+    }
+}
+
 @media only screen
   and (max-device-width:823px) {
   figure {
