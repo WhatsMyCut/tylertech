@@ -20,8 +20,9 @@
   }
   button {
     background-color: #21578A;
-    padding: 5px;
+    padding: 8px;
     cursor: pointer;
+    border: 0;
   }
   img {
     height: 15px;

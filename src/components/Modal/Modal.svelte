@@ -135,7 +135,6 @@
 
   .close {
     display: block;
-    box-sizing: border-box;
     position: absolute;
     z-index: 1000;
     top: 1rem;
@@ -145,45 +144,13 @@
     width: 1.5rem;
     height: 1.5rem;
     border: 0;
-    color: black;
-    border-radius: 1.5rem;
-    background: white;
-    box-shadow: 0 0 0 1px black;
-    transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
-                background 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
-    -webkit-appearance: none;
-  }
-
-  .close:before, .close:after {
-    content: '';
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    width: 1rem;
-    height: 1px;
-    background: black;
-    transform-origin: center;
-    transition: height 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
-                background 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
-  }
-
-  .close:before {
-    -webkit-transform: translate(0, -50%) rotate(45deg);
-    -moz-transform: translate(0, -50%) rotate(45deg);
-    transform: translate(0, -50%) rotate(45deg);
-    left: 0.25rem;
-  }
-
-  .close:after {
-    -webkit-transform: translate(0, -50%) rotate(-45deg);
-    -moz-transform: translate(0, -50%) rotate(-45deg);
-    transform: translate(0, -50%) rotate(-45deg);
-    left: 0.25rem;
+    background: url('/icons/btn_close.png') center center no-repeat;
   }
 
   .close:hover {
-    background: black;
+    border: 1px solid #21578A;
+    border-radius: 15%;
+    padding: 5px;
   }
 
   .close:hover:before, .close:hover:after {
