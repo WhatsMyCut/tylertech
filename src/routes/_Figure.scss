@@ -1,9 +1,10 @@
 @import '../style/global.scss';
 figure {
+  display: flex;
   text-align: center;
-  margin: 0px;
+  width: 100%;
   height: 75vh;
-  max-width: 100%;
+  max-width: 75vw;
   background-color: #131218;
   position: relative;
   margin: auto;
@@ -29,10 +30,6 @@ img {
   width: 100%;
   height: auto;
 }
-.booth-headline {
-  font-size: 22px;
-  margin: 0 0 10px;
-}
 .block {
   opacity: 1;
 }
@@ -52,7 +49,7 @@ img {
   align-self: center;
 }
 .ptext.pedestal1 {
-  left: 24.5%;
+  left: 25.5%;
   bottom: 22%;
 }
 .ptext.pedestal2 {
@@ -62,11 +59,12 @@ img {
   right: 35%;
 }
 .ptext.pedestal3 {
-  right: 24.5%;
+  right: 25.5%;
   bottom: 21%;
 }
-.ptext.pedestal3.appraisal-and-tax {
-  right: 26.5%;
+.ptext.pedestal3.appraisal-and-tax,
+.ptext.pedestal3.courts-municipal {
+  right: 29.25%;
 }
 .hotspot {
   position: absolute;
@@ -124,6 +122,19 @@ img {
     height: 75vh;
     margin: auto;
   }
+  .ptext{
+    font-size: 0.9rem;
+  }
+  .ptext.ptext.pedestal1 {
+    left: 26.5%;
+  }
+  .ptext.ptext.pedestal3 {
+    right: 26.5%;
+  }
+  .ptext.ptext.pedestal3.ptext.pedestal3.appraisal-and-tax,
+  .ptext.ptext.pedestal3.ptext.pedestal3.courts-municipal {
+    right: 29%;
+  }
 }
 @media only screen
   and (min-width: 1239px)
@@ -134,10 +145,10 @@ img {
     margin: auto;
   }
   .ptext.pedestal1 {
-    left: 25.5%;
+    left: 26.5%;
   }
   .ptext.pedestal3 {
-    right: 25.5%;
+    right: 26.5%;
   }
 }
 @media only screen
@@ -146,6 +157,9 @@ img {
   and (-webkit-min-device-pixel-ratio: 2) { // smaller laptop screens with retina display
   figure {
     max-width: 1024px;
+  }
+  .ptext{
+    font-size: 1.9rem;
   }
 }
 @media only screen
@@ -162,7 +176,7 @@ img {
     figure {
       max-width: 1024px;
     }
-}
+  }
 
 @media only screen
   and (max-device-width:823px) {
