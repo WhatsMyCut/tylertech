@@ -126,7 +126,7 @@ img {
   }
 }
 @media only screen
-  and (min-width: 968px)
+  and (min-width: 1239px)
   and (min-width: 1500px) {
   figure {
     max-width: 75vw;
@@ -160,7 +160,7 @@ img {
   and (max-device-height: 768px)
   and (min-device-width: 1240px) {
     figure {
-      max-width: 75vw;
+      max-width: 1024px;
     }
 }
 
