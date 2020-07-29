@@ -326,7 +326,7 @@ const sections = [{
     }
   },
   {
-    title: "Total Tyler",
+    title: "Tyler Technologies",
     slug: "tyler-technologies",
     background: "/backgrounds/tylertech_booth_08_total_tyler.jpg",
     mp4: "/videos/tylertech_booth_08_total_tyler.mp4",
