@@ -74,7 +74,7 @@ const sections = [{
       "pedestal2": {
         type: "Brochure",
         URL: "https://www.tylertech.com/cs-2",
-        text: "Product Information",
+        text: "Client Success Story",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="PDF" height="80" />',
         buttonText: "Download",
@@ -111,7 +111,7 @@ const sections = [{
       "pedestal1": {
         type: "Brochure",
         URL: "https://www.tylertech.com/cjc-1",
-        text: "Product Information",
+        text: "Solution Overview",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -154,7 +154,7 @@ const sections = [{
       "pedestal1": {
         type: "Brochure",
         URL: "https://www.tylertech.com/erp-1",
-        text: "Product Information",
+        text: "Mid-Size to Large Gov",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -164,7 +164,7 @@ const sections = [{
       "pedestal2": {
         type: "Brochure",
         URL: "https://www.tylertech.com/erp-2",
-        text: "Product Information",
+        text: "Small to Mid-Size Gov",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -201,7 +201,7 @@ const sections = [{
       "pedestal1": {
         type: "Brochure",
         URL: "https://www.tylertech.com/cjm-1",
-        text: "Product Information",
+        text: "Solution Overview",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -245,7 +245,7 @@ const sections = [{
       "pedestal1": {
         type: "Brochure",
         URL: "https://www.tylertech.com/ps-1",
-        text: "Product Information",
+        text: "Download Brochure",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -253,10 +253,10 @@ const sections = [{
         buttonOnClick: "downloadDoc"
       },
       "pedestal2": {
-        type: "Brochure",
-        URL: "https://www.tylertech.com/ps-2",
-        text: "Product Information",
-        icon: "/icons/MultiPageDoc.svg",
+        type: "Video",
+        URL: "https://tylertech.wistia.com/medias/tnpbgc4xge",
+        text: "Watch Video",
+        icon: "/icons/Video.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
         buttonIcon: "download",
@@ -264,8 +264,8 @@ const sections = [{
       },
       "pedestal3": {
         type: "Brochure",
-        URL: "https://www.tylertech.com/ps-3",
-        text: "Product Information",
+        URL: "https://www.tylertech.com/publicsafetyresources",
+        text: "Explore Success Stories",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -292,7 +292,7 @@ const sections = [{
       "pedestal1": {
         type: "Brochure",
         URL: "https://www.tylertech.com/schools-1",
-        text: "Product Information",
+        text: "Student Transportation",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -302,7 +302,7 @@ const sections = [{
       "pedestal2": {
         type: "Brochure",
         URL: "https://www.tylertech.com/schools-2",
-        text: "Product Information",
+        text: "Small to Mid-Size K-12 ERP",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -312,7 +312,7 @@ const sections = [{
       "pedestal3": {
         type: "Brochure",
         URL: "https://www.tylertech.com/schools-3",
-        text: "Product Information",
+        text: "Mid-Size to Large K-12 ERP",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -326,7 +326,7 @@ const sections = [{
     }
   },
   {
-    title: "Total Tyler",
+    title: "Tyler Technologies",
     slug: "tyler-technologies",
     background: "/backgrounds/tylertech_booth_08_total_tyler.jpg",
     mp4: "/videos/tylertech_booth_08_total_tyler.mp4",
@@ -338,8 +338,8 @@ const sections = [{
       },
       "pedestal1": {
         type: "Brochure",
-        URL: "https://www.tylertech.com/tt-1",
-        text: "Product Information",
+        URL: "https://www.tylertech.com/resources/resource-downloads/brochure-connected-communities",
+        text: "Download Brochure",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -348,8 +348,8 @@ const sections = [{
       },
       "pedestal2": {
         type: "Brochure",
-        URL: "https://www.tylertech.com/tt-2",
-        text: "Product Information",
+        URL: "https://www.tylertech.com/resources/resource-downloads/why-building-a-connected-community-is-every-leaders-job",
+        text: "Read White Paper",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -358,8 +358,8 @@ const sections = [{
       },
       "pedestal3": {
         type: "Brochure",
-        URL: "https://www.tylertech.com/tt-3",
-        text: "Product Information",
+        URL: "https://www.tylertech.com/resources/resource-downloads/covid-19-recovery-readiness-guide",
+        text: "Download Guide",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
@@ -368,7 +368,7 @@ const sections = [{
       },
       "hdisplay": {
         type: "horiz-display",
-        content: '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/xzn9pkevzo?videoFoam=true" title="Tyler Technologies Virtual Trade Show Video " allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>',
+        content: 'https://tylertech.wistia.com/medias/1hsoid64lq',
       }
     }
   }

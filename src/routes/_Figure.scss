@@ -52,6 +52,9 @@ img {
   left: 24.75%;
   bottom: 22%;
 }
+.ptext.ptext.pedestal1.schools {
+  left: 21.5%;
+}
 .ptext.pedestal2 {
   left: 35%;
   bottom: 17%;
@@ -65,6 +68,12 @@ img {
 .ptext.pedestal3.appraisal-and-tax,
 .ptext.pedestal3.courts-municipal {
   right: 27.75%;
+}
+.ptext.ptext.pedestal3.public-safety {
+  right: 24%;
+}
+.ptext.ptext.pedestal3.schools {
+  right: 21.5%;
 }
 .hotspot {
   position: absolute;
@@ -128,12 +137,18 @@ img {
   .ptext.ptext.pedestal1 {
     left: 26.5%;
   }
-  .ptext.ptext.pedestal3 {
-    right: 26.5%;
+  .ptext.ptext.pedestal1.schools {
+    left: 24.5%;
   }
   .ptext.ptext.pedestal3.ptext.pedestal3.appraisal-and-tax,
   .ptext.ptext.pedestal3.ptext.pedestal3.courts-municipal {
     right: 29%;
+  }
+  .ptext.ptext.pedestal3.ptext.pedestal3.public-safety {
+    right: 24%;
+  }
+  .ptext.ptext.pedestal3.schools {
+    right: 23.5%;
   }
 }
 @media only screen
@@ -149,6 +164,9 @@ img {
   }
   .ptext.pedestal3 {
     right: 26.5%;
+  }
+  .ptext.ptext.pedestal3.ptext.pedestal3.public-safety {
+    right: 23.4%;
   }
 }
 @media only screen
