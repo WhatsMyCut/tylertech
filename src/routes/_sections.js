@@ -265,7 +265,7 @@ const sections = [{
       "pedestal3": {
         type: "Brochure",
         URL: "https://www.tylertech.com/publicsafetyresources",
-        text: "Explore Success Stories",
+        text: "Read Success Story",
         icon: "/icons/MultiPageDoc.svg",
         content: '<img src="/icons/MultiPageDoc.svg" alt="Brochure" height="80" />',
         buttonText: "Download",
